@@ -170,7 +170,7 @@ body {
   body {
     grid-template-columns: 22% 22% 22% 22%;
     height: 100vh;
-    padding: 0;
+    padding: 12% ;
     place-content: center;
   }
   .user-ctrls {
