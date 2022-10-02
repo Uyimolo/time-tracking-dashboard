@@ -8,14 +8,13 @@ fetch("./data.json")
     let changeValue = (timeStamp, previousTimeRange) => {
       times.forEach((time) => {
         time.innerHTML = `<p class="time"> ${json[index]["timeframes"][timeStamp].current}hrs  </p>
-          <p class="previous-time"> ${previousTimeRange} ${json[index]["timeframes"][timeStamp].previous}hrs</p>`;
+          <p class="previous-time"> ${previousTimeRange} - ${json[index]["timeframes"][timeStamp].previous}hrs</p>`;
         index += 1;
       });
       index = 0;
     };
 
-    const timeframesEl = document.querySelectorAll(".timeframe");
-    timeframesEl.forEach((timeframe) => {
+    document.querySelectorAll(".timeframe").forEach((timeframe) => {
       timeframe.addEventListener("click", (e) => {
         const el = e.target;
         const classes = el.classList;
@@ -29,14 +28,3 @@ fetch("./data.json")
       });
     });
   });
-
-/*
-
-
-const selectTimeframe = (el) => {
-    
-}
-
-
-
-*/
