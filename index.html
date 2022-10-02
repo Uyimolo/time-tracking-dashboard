@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Tracker</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Kumbh+Sans:wght@500&family=Montserrat+Alternates:wght@300&family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="user-ctrls flex-container">
+      <aside class="user">
+        <img
+          class="profile-image"
+          src="images/image-jeremy.png"
+          alt="Profile image"
+        />
+        <div class="user-desc">
+          <p>Report for</p>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </aside>
+      <div class="timeframes">
+        <p class="timeframe daily" id="daily">Daily</p>
+        <p class="timeframe weekly" id="weekly">Weekly</p>
+        <p class="timeframe monthly" id="monthly">Monthly</p>
+      </div>
+    </main>
+
+    <section class="activity flex-container" id="work">
+      <div class="info flex-container">
+        <div class="info-desc flex-container">
+          <h4 class="act-type">Work</h4>
+          <img src="images/icon-ellipsis.svg" alt="" class="more" />
+        </div>
+        <div class="times flex-container">
+          <p class="time">32hrs</p>
+          <p class="previous-time">Last Week - 36hrs</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="activity flex-container" id="play">
+      <div class="info flex-container">
+        <div class="flex-container info-desc">
+          <h4 class="act-type">Play</h4>
+          <img src="images/icon-ellipsis.svg" alt="" class="more" />
+        </div>
+        <div class="times flex-container">
+          <p class="time">10hrs</p>
+          <p class="previous-time">Last Week - 8hrs</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="activity flex-container" id="study">
+      <div class="info flex-container">
+        <div class="flex-container info-desc">
+          <h4 class="act-type">Study</h4>
+          <img src="images/icon-ellipsis.svg" alt="" class="more" />
+        </div>
+        <div class="times flex-container">
+          <p class="time flex-container">4hrs</p>
+          <p class="previous-time">Last Week - 7hrs</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="activity flex-container" id="exercise">
+      <div class="info flex-container">
+        <div class="flex-container info-desc">
+          <h4 class="act-type">Exercise</h4>
+          <img src="images/icon-ellipsis.svg" alt="" class="more" />
+        </div>
+        <div class="times flex-container">
+          <p class="time">4hrs</p>
+          <p class="previous-time">Last Week - 5hrs</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="activity flex-container" id="social">
+      <div class="info flex-container">
+        <div class="flex-container info-desc">
+          <h4 class="act-type">Social</h4>
+          <img src="images/icon-ellipsis.svg" alt="" class="more" />
+        </div>
+        <div class="times flex-container">
+          <p class="time">5hrs</p>
+          <p class="previous-time">Last Week - 10hrs</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="activity flex-container" id="self-care">
+      <div class="info flex-container">
+        <div class="flex-container info-desc">
+          <h4 class="act-type">Self Care</h4>
+          <img src="images/icon-ellipsis.svg" alt="" class="more" />
+        </div>
+        <div class="times flex-container">
+          <p class="time">2hrs</p>
+          <p class="previous-time">Last Week - 2hrs</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
